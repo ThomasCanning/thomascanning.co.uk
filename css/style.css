@@ -24,12 +24,6 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
 .header-content {
   display: flex;
   align-items: center;
@@ -113,11 +107,6 @@ header h1 {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
-p {
-  font-size: 1.4rem;
-  color:#1C1C1C;
-}
-
 .social-links {
   margin-top: 1rem;
   display: flex;
@@ -183,53 +172,14 @@ h3{
   color:#1C1C1C
 }
 
-details {
-  color: var(--light-background);
-  margin: 0.5rem;
-  border-radius: 10px;
-  background-color: var(--light-background);
-  padding-bottom: 0.2rem;
-  border: 1px solid var(--light-background); /* Add border for better separation */
-
-}
-
-summary {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  background-color: var(--light-background); /* Light background color for the summary */
-  padding: 0.8rem;
-  border-radius: 10px 10px 0 0;
-  font-weight: bold;
-  color: #333;
-}
-
-summary:hover {
-  background-color: var(--light-background); /* Background color change on hover */
-}
-
-summary h4 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
 h4 {
   margin:  0.8rem;
   font-size: 1.2rem;
 }
 
-details[open] summary {
-  border-bottom: none;
-}
-
 #year2-content, #year1-content {
   padding: 1rem;
   background-color: var(--light-background);
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 li {
@@ -242,24 +192,6 @@ li {
 
 .gapAbove{
   margin-top: 0.5rem;
-}
-
-ul {
-  list-style-type: square;
-  margin-left: 1.6rem;
-}
-
-ul li {
-  margin-bottom: 1rem;
-  color:#1C1C1C
-}
-
-ul p {
-  font-size: 1.1rem;
-}
-
-ul ul {
-  margin-left: 2rem;
 }
 
 footer {
@@ -278,6 +210,127 @@ footer p {
 a {
   color: white;
   text-decoration: none;
+}
+
+
+p {
+  font-size: 1.4rem;
+  color:#1C1C1C;
+}
+
+ul {
+  list-style-type: square;
+  margin-top: 1rem;
+  margin-left: 1.6rem;
+  padding: 0;
+  color: #1C1C1C; /* Text color for list items */
+}
+
+ul li {
+  margin-bottom: 1rem;
+  font-size: 1.4rem; /* Adjust font size if needed */
+  color: #1C1C1C; /* Ensure list item color matches the rest of the text */
+}
+
+ul li::marker {
+  color: var(--header-color); /* Custom color for list markers */
+}
+
+ul ul {
+  margin-left: 2rem;
+}
+
+details {
+  color: var(--light-background);
+  margin: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--light-background);
+  padding: 0.8rem;
+  border-radius: 10px; /* Rounded corners */
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+summary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+details[open] summary {
+  border-radius: 10px 10px 0 0; /* Rounded corners only at the top when expanded */
+  transform: none; /* Disable scale effect when expanded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Maintain shadow effect */
+}
+
+details[open] summary:hover {
+  transform: none;
+}
+
+summary h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+summary p {
+  padding: 0 0 2px 10px;
+  font-size: 1.1rem;
+}
+
+details[open] div {
+  border-radius: 0 0 10px 10px; /* Rounded corners only at the bottom */
+  background-color: var(--light-background);
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+summary.expanded {
+  border-radius: 10px 10px 0 0; /* Rounded corners only at the top when expanded */
+  transform: none; /* Disable scale effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Maintain shadow effect */
+}
+
+summary.expanded:hover {
+  transform: none;
+}
+
+.projects-widget {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.project:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.project-description {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 950px) {
@@ -305,6 +358,14 @@ a {
     font-size: 4vw
   }
 
+  ul li {
+    font-size: 1.2rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+
   h2 {
     font-size: 3rem;
     line-height: 1.1;
@@ -313,14 +374,6 @@ a {
 
   h3{
     font-size: 1.2rem;
-  }
-
-  p, ul li {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 1.05rem;
   }
 
   .social-links a {
