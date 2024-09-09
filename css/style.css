@@ -91,12 +91,12 @@ header .wave .shape-fill {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(40%, 800px);
+  width: min(40%, 700px);
   height: min(40%, 800px);
   border-radius: 50%;
   padding: 10px;
   overflow: hidden;
-  margin: 10px 4vw;
+  margin: 10px 6vw;
 }
 
 .profile-image img {
