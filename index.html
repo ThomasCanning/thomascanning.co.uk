@@ -63,31 +63,31 @@
   <div class="projects-widget">
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Python</div>
-      <div class="project-description">Used Python extensively during my studies, for example to implement machine learning models using numpy and pytorch, and visual computing techniques using OpenCv.</div>
+      <div class="project-description">Used Python extensively at University in the AI, machine learning, and visual computing modules, for example to implement machine learning models using numpy and pytorch, and visual computing techniques using OpenCv, as well as for personal projects.</div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Golang</div>
-      <div class="project-description">Description for Project 2.</div>
+      <div class="project-description">Self-taught Golang before starting my internship at Confluent by solving Leetcode problems, and have since used it extensively for projects related to Kubernetes.</div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Java</div>
-      <div class="project-description">Description for Project 2.</div>
+      <div class="project-description">Self-taught Java to explore object-oriented programming, using it for a number of personal projects. Java has also been a key language used in my studies, particularly for the frontend of our year 1 group agile project.</div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">C</div>
-      <div class="project-description">Description for Project 2.</div>
+      <div class="project-description">I explored programming concepts such as memory management and bitwise operations using C in the 1st year systems architecture and programming modules, and then applied these skills in Arduino projects, including developing a smart-blind system that combined both hardware and software components.</div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Git</div>
-      <div class="project-description">Description for Project 2.</div>
+      <div class="project-description">I use GitHub and git commands in the command line daily, both as part of my internship and for personal projects.</div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Linux</div>
-      <div class="project-description">Description for Project 2.</div>
+      <div class="project-description">I frequently use Linux commands both on my personal computer running the Linux Mint distribution, and as part of my internship, using them within mac-os </div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Latex</div>
-      <div class="project-description">Description for Project 2.</div>
+      <div class="project-description">Used LaTeX throughout university for writing reports and mathematical work, as well as incorporating Latex into the readmes of some personal projects.</div>
     </div>
     <div class="project" onclick="toggleDescription(this)">
       <div class="project-title">Terraform</div>
@@ -132,7 +132,7 @@
   <h3><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
 
   <details>
-    <summary><h4 id="year2-header">2nd year modules | 81%</h4><p>▶</p></summary>
+    <summary class="floating"><h4 id="year2-header">2nd year modules | 81%</h4><p>▶</p></summary>
     <div id="year2-content">
       <ul>
         <li><strong>Machine learning</strong>: 85% – Studied neural networks (including convolutional, GANs, large-language models), and other supervised/unsupervised techniques such as regression, Naive-Bayes, PCA, and Gaussian Mixture Models - implementing each in Python.</li>
@@ -148,10 +148,10 @@
   </details>
 
   <details>
-    <summary><h4 id="year1-header">1st year modules | 77% </h4><p>▶</p></summary>
+    <summary class="floating"><h4 id="year1-header">1st year modules | 77% </h4><p>▶</p></summary>
     <div id="year1-content">
       <ul>
-        <li><strong>Software Processes and Modelling</strong>: 77% – Led a team of 5 as Scrum Master in developing a fitness app. I led the development of the Java frontend, organised meetings, and learnt how software projects can be effectively organised using agile development and object-oriented programming.</li>
+        <li id="spam"><strong>Software Processes and Modelling</strong>: 77% – Led a team of 5 as Scrum Master in developing a fitness app. I led the development of the Java frontend, organised meetings, and learnt how software projects can be effectively organised using agile development and object-oriented programming.</li>
         <li><strong>Mathematics for Computation</strong>: 78% – Studied fundamental topics in mathematical analysis crucial to Computer Science, including linear algebra, derivatives, and series.</li>
         <li><strong>Principles of Programming</strong>: 79% – Gained the skills to quickly pick up and solve problems in any language. I became proficient in Python and Java, and explored memory management with C.</li>
         <li><strong>Discrete Mathematics and Databases</strong>: 82% – Developed knowledge of logic, maps, and relational algebra, then applied it to databases and SQL.</li>
@@ -175,7 +175,7 @@
 
 <section id="work-experience" class="section-light">
   <h2>Work Experience</h2>
-  <h3><strong>Software Engineering Intern</strong> - Confluent (05/2024 - 05/2025)</h3>
+  <h3 id="confluent-internship"><strong>Software Engineering Intern</strong> - Confluent (05/2024 - 05/2025)</h3>
   <p>I am currently on a software engineering internship at Confluent, working as a cloud infrastructure engineer within the Kubernetes platform team –
     the team that manages the Kubernetes clusters that run Confluent Cloud, a Kafka-based real-time data streaming service.
     I’ve gained hands-on experience with Kubernetes, Golang, Linux and Git commands, Terraform, AWS, GCP, Azure, Docker, and Helm, by delivering several projects, including:
@@ -221,27 +221,20 @@
 
   function toggleDescription(project) {
     const description = project.querySelector('.project-description');
+
+    // Hide all other project descriptions
+    document.querySelectorAll('.project-description').forEach(desc => {
+      if (desc !== description) {
+        desc.style.display = 'none';
+      }
+    });
+
+    // Toggle the clicked project's description
     if (description.style.display === 'block') {
       description.style.display = 'none';
     } else {
       description.style.display = 'block';
     }
-  }
-
-  function adjustProjectWidth() {
-    const projects = document.querySelectorAll('.project');
-    const windowWidth = window.innerWidth;
-
-    const minColumnWidth = 250; // Minimum column width (you can adjust this)
-
-    let columns = Math.floor(windowWidth / minColumnWidth);
-
-    let columnWidth = `calc(${(100 / columns)}% - 1rem)`;
-
-    // Apply the calculated width to each project
-    projects.forEach(project => {
-      project.style.width = columnWidth;
-    });
   }
 
   // Adjust project width on window resize

@@ -226,6 +226,15 @@ ul {
   color: #1C1C1C; /* Text color for list items */
 }
 
+a {
+  color: #1C1C1C; /* Text color for links */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--header-color); /* Hover color for links */
+}
+
 ul li {
   margin-bottom: 1rem;
   font-size: 1.4rem; /* Adjust font size if needed */
@@ -249,16 +258,12 @@ details {
 summary {
   display: flex;
   align-items: center;
-  cursor: pointer;
   background-color: var(--light-background);
-  padding: 0.8rem;
-  border-radius: 10px; /* Rounded corners */
   font-weight: bold;
   color: #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-summary:hover {
+summary:hover, .project:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -301,6 +306,19 @@ summary.expanded:hover {
   transform: none;
 }
 
+.floating, .project{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.project {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
 .projects-widget {
   display: flex;
   flex-wrap: wrap;
@@ -310,21 +328,6 @@ summary.expanded:hover {
 
 .project-title {
   font-weight: bold;
-}
-
-.project {
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.project:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.02);
 }
 
 .project-description {
