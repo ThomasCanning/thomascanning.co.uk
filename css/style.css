@@ -4,7 +4,7 @@
   --header-color: #204B72;
   --white-color: #dce9ef;
   --brighter-white-color: #eef2f8;
-  --basic-grey: #1C1C1C;
+  --basic-grey: #2b2b2b;
 }
 
 .poppins-regular {
@@ -259,7 +259,7 @@ a:hover {
 
 ul li {
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--basic-grey);
 }
 
@@ -343,8 +343,8 @@ summary.expanded:hover{
   width: 100%;
 }
 
-.project-widget-bottom{
-  margin-top: 1rem;
+.project-widget-top {
+  margin-bottom: -15px;
 }
 
 .project-widget-top .project {
@@ -352,18 +352,36 @@ summary.expanded:hover{
   flex: 1 1 100%;
 }
 
-.project-widget-bottom .project {
-  flex: 1 1 calc(50% - 1rem);
-  max-width: calc(50% - 1rem);
-}
-
 .project {
   background-color: var(--white-color);
   border: 1px solid var(--white-color);
   border-radius: 8px;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adds space between icon and text */
   transition: background-color 0.3s, transform 0.3s;
-  margin: auto;
+}
+
+.project-subtitle em{
+  font-size: 1.2rem;
+  color: #343434;
+}
+
+.skill-icon {
+  width: 150px; /* Fixed width for the container */
+  height: auto; /* Fixed height for the container */
+  display: flex;
+  flex-direction: column; /* Stack icon and GitHub link vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.skill-icon img {
+  width: 100%; /* Make image fill the container's width */
+  height: 100%; /* Make image fill the container's height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 5%; /* Optional: rounded corners for images */
 }
 
 .skill, .project {
@@ -400,11 +418,121 @@ summary.expanded:hover{
   display: none;
   margin-top: 0.5rem;
   font-size: 1.2rem;
+  color: var(--basic-grey);
+}
+
+h5{
+  font-size: 1.4rem;
+  color: var(--basic-grey);
+}
+
+.github-link {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.github-link a {
+  color: var(--basic-grey);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-link i {
+  margin-right: 8px;
+  font-size: 1.4rem;
+  color: var(--basic-grey);
+}
+
+.github-link a:hover {
+  color: var(--header-color);
+  text-decoration: underline;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--basic-grey);}
+
+.project-subtitle{
+  font-size: 1.4rem;
+  color: var(--basic-grey);
+}
+
+.project-sub-subtitle{
+  font-size: 1.2rem;
+  color: var(--basic-grey);
+  line-height: 1.8rem;
+}
+
+.screenshots-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#calkeeper{
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+#options{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#amaze{
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.screenshots-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Adds rounded corners to images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+#options{
+  padding: 10px;
+}
+
+@media (min-width: 1500px) {
+  .project-widget-bottom .project {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 1500px) {
+  .project {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .skill-icon {
+    flex-shrink: 0;
+    width: 150px;
+    height: auto;
+  }
 }
 
 @media (max-width: 950px) {
-  .project {
-    width: 100%;
+  #calkeeper{
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+
+  #options{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #amaze{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .skill-icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Stack icon and GitHub link vertically */
+    align-items: center; /* Center horizontally */
   }
 
   .skills-widget {
@@ -465,6 +593,7 @@ summary.expanded:hover{
 
   summary h4{
     font-size: 1.2rem;
+    color: var(--basic-grey);
   }
 
   h4{

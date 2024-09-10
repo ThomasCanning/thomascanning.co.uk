@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 </head>
 <body>
 <header>
@@ -57,51 +58,180 @@
       <div class="project" onclick="toggleProjectDescription(this)">
         <div class="skill-icon">
           <img src="/img/calkeeper/icon.png" alt="Project Icon">
+          <div class="github-link">
+            <a href="https://github.com/Sparky-Software/CalKeeper" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </div>
         </div>
         <div class="skill-info">
-          <div class="skill-title">CalKeeper</div>
-          <div class="skill-subtitle">Electrical Test Instrument Logbook - a mobile app built in Flutter</div>
-          <div class="project-description">Blah blah blah blah blah</div>
+          <div class="project-title">CalKeeper</div>
+          <div class="project-subtitle">Electrical Test Instrument Logbook App.</div>
+          <div class="project-sub-subtitle">
+            <em>Mobile app built in Flutter, published to the Google Play Store.</em>
+          </div>
+          <div class="project-description">
+            CalKeeper is the comprehensive solution for helping UK electricians maintain accurate and up-to-date records of their electrical test instruments. Electrical test instruments must be calibrated every 3 years, and up-to-date records must be kept each month to ensure the instrument remains within calibration tolerance. With CalKeeper, electricians can:
+            <ul>
+              <li>Record instrument insulation, continuity, earth loop, and RCD values, with the flexibility to enter as much or as little detail as needed.</li>
+              <li>Export reports for each instrument to PDF at the tap of a button.</li>
+              <li>Receive automatic alerts if values deviate from baseline readings.</li>
+              <li>Stay on top of testing with notifications for upcoming instrument tests.</li>
+              <li>Get started easily with tutorial prompts guiding setup.</li>
+            </ul>
+            The app is built in Flutter, with data stored on the device using Hive. This is my first mobile app released to an app store, and it has taught me a great deal about mobile app design and the process of public release. The app is currently under review on the Google Play Store.
+            <br><h5>Screenshots:</h5>
+            <div class="screenshots-gallery" id="calkeeper">
+              <a href="/img/calkeeper/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Home Screen">
+                <img src="/img/calkeeper/s1.png" alt="Screenshot 1 - Home Screen">
+              </a>
+              <a href="/img/calkeeper/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - PDF export">
+                <img src="/img/calkeeper/s2.png" alt="Screenshot 2 - PDF export">
+              </a>
+              <a href="/img/calkeeper/s3.png" data-fancybox="gallery" data-caption="Screenshot 3 - Test overview">
+                <img src="/img/calkeeper/s3.png" alt="Screenshot 3 - Test overview">
+              </a>
+              <a href="/img/calkeeper/s4.png" data-fancybox="gallery" data-caption="Screenshot 4 - Settings">
+                <img src="/img/calkeeper/s4.png" alt="Screenshot 4 - Settings">
+              </a>
+              <a href="/img/calkeeper/s5.png" data-fancybox="gallery" data-caption="Screenshot 5 - Tutorial">
+                <img src="/img/calkeeper/s5.png" alt="Screenshot 5 - Tutorial">
+              </a>
+              <a href="/img/calkeeper/s6.png" data-fancybox="gallery" data-caption="Screenshot 6 - Record values">
+                <img src="/img/calkeeper/s6.png" alt="Screenshot 6 - Record values">
+              </a>
+              <a href="/img/calkeeper/s7.png" data-fancybox="gallery" data-caption="Screenshot 7 - Instrument details">
+                <img src="/img/calkeeper/s7.png" alt="Screenshot 7 - Instrument details">
+              </a>
+              <a href="/img/calkeeper/s8.png" data-fancybox="gallery" data-caption="Screenshot 8 - Instrument tests">
+                <img src="/img/calkeeper/s8.png" alt="Instrument tests - Settings">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="project" onclick="toggleProjectDescription(this)">
         <div class="skill-icon">
-          <img src="" alt="Project Icon">
+          <img src="/img/options_pricer/icon.jpg" alt="Project Icon">
+          <div class="github-link">
+            <a href="https://github.com/ThomasCanning/OptionsPricing" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </div>
         </div>
         <div class="skill-info">
-          <div class="skill-title">Options Pricer</div>
-          <div class="skill-subtitle">Options pricing calculator and price visualisation tool - desktop app built in Java</div>
-          <div class="project-description">Blah blah blah blah blah</div>
+          <div class="project-title">Options Pricer</div>
+          <div class="project-subtitle">Options pricing calculator and price visualisation tool.</div>
+          <div class="project-sub-subtitle">
+            <em>Desktop app built in Java.</em>
+          </div>
+          <div class="project-description">
+            This tool calculates the price of European call and put options, using either the Black-Scholes formula or the binomial pricing model. The models are based on the book "Options, Futures, and Other Derivatives" by John C. Hull (5th edition). Additionally, you can plot each variable against the options call or put price to visualize the impact of each variable on the option price.
+            The app is built in Python, with a Tkinter GUI. The binomial pricing model uses numpy for calculations, and the graphs are plotted with matplotlib. The project was a great way of improving my understanding of option pricing models, and the mathematics behind them.
+            <br><h5>Screenshots:</h5>
+            <div class="screenshots-gallery">
+              <a href="/img/options_pricer/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Call price">
+                <img src="/img/options_pricer/s1.png" alt="Screenshot 1 - Call price">
+              </a>
+              <a href="/img/options_pricer/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - Put price">
+                <img src="/img/options_pricer/s2.png" alt="Screenshot 2 - Put price">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="project" onclick="toggleProjectDescription(this)">
         <div class="skill-icon">
-          <img src="" alt="Project Icon">
+          <img src="/img/options_pricer/icon.jpg" alt="Project Icon">
+          <div class="github-link">
+            <a href="https://github.com/ThomasCanning/OptionsPricing" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </div>
         </div>
         <div class="skill-info">
-          <div class="skill-title">Racket Ready</div>
-          <div class="skill-subtitle">Racket-sports matchmaking app - progressive web app built in React</div>
-          <div class="project-description"></div>
+          <div class="project-title">Racket Ready</div>
+          <div class="project-subtitle">Racket-sports matchmaking app.</div>
+          <div class="project-sub-subtitle">Progressive web app for mobile, built in React.</div>
+          <div class="project-description">
+            This tool calculates the price of European call and put options, using either the Black-Scholes formula or the binomial pricing model. The models are based on the book "Options, Futures, and Other Derivatives" by John C. Hull (5th edition). Additionally, you can plot each variable against the options call or put price to visualize the impact of each variable on the option price.
+            The app is built in Python, with a Tkinter GUI. The binomial pricing model uses numpy for calculations, and the graphs are plotted with matplotlib. The project was a great way of improving my understanding of option pricing models, and the mathematics behind them.
+            <br><h5>Screenshots:</h5>
+            <div class="screenshots-gallery">
+              <a href="/img/options_pricer/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Call price">
+                <img src="/img/options_pricer/s1.png" alt="Screenshot 1 - Call price">
+              </a>
+              <a href="/img/options_pricer/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - Put price">
+                <img src="/img/options_pricer/s2.png" alt="Screenshot 2 - Put price">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="project" onclick="toggleProjectDescription(this)">
         <div class="skill-icon">
-          <img src="" alt="Project Icon">
+          <img src="/img/amaze/icon.jpg" alt="Project Icon">
+          <div class="github-link">
+            <a href="https://github.com/ThomasCanning/Amaze" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </div>
         </div>
         <div class="skill-info">
-          <div class="skill-title">Amaze</div>
-          <div class="skill-subtitle">Visualisation tool for graph search algorithms - desktop app built in Java</div>
-          <div class="project-description"></div>
+          <div class="project-title">Amaze</div>
+          <div class="project-subtitle">Visualisation tool for graph search algorithms.</div>
+          <div class="project-sub-subtitle">Desktop app built in Java.</div>
+          <div class="project-description">
+            Amaze is a visualisation tool for graph search algorithms. You are given a 25 by 25 grid and can create a maze of wall pieces with a start and end tile. You are then able to select a pathfinding algorithm (A*, depth first search, breadth first search, or random search) and display the path it finds. You can also choose to display all the nodes that the algorithm visits in the process of finding the path. This allows you to compare the path found by different algorithms, as well as see a rough time comparison for the time it takes to run. You can also save your created maze so it will be there next time the programme runs. This was a very useful project for understanding how graph search algorithms work.
+            <div class="screenshots-gallery" id="amaze">
+              <a href="/img/amaze/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Call price">
+                <img src="/img/amaze/s1.png" alt="Screenshot 1 - Call price">
+              </a>
+              <a href="/img/amaze/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - Put price">
+                <img src="/img/amaze/s2.png" alt="Screenshot 2 - Put price">
+              </a>
+              <a href="/img/amaze/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Call price">
+                <img src="/img/amaze/s1.png" alt="Screenshot 1 - Call price">
+              </a>
+              <a href="/img/amaze/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - Put price">
+                <img src="/img/amaze/s2.png" alt="Screenshot 2 - Put price">
+              </a>
+              <a href="/img/amaze/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Call price">
+                <img src="/img/amaze/s1.png" alt="Screenshot 1 - Call price">
+              </a>
+              <a href="/img/amaze/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - Put price">
+                <img src="/img/amaze/s2.png" alt="Screenshot 2 - Put price">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="project" onclick="toggleProjectDescription(this)">
         <div class="skill-icon">
-          <img src="" alt="Project Icon">
+          <img src="/img/options_pricer/icon.jpg" alt="Project Icon">
+          <div class="github-link">
+            <a href="https://github.com/ThomasCanning/Amaze" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </div>
         </div>
         <div class="skill-info">
-          <div class="skill-title">Hangman</div>
-          <div class="skill-subtitle">A single and multiplayer graphical hangman game - desktop app built in Java</div>
-          <div class="project-description"></div>
+          <div class="project-title">Hangman</div>
+          <div class="project-subtitle">A single and multiplayer graphical hangman game.</div>
+          <div class="project-sub-subtitle">Desktop app built in Java.</div>
+          <div class="project-description">
+            This tool calculates the price of European call and put options, using either the Black-Scholes formula or the binomial pricing model. The models are based on the book "Options, Futures, and Other Derivatives" by John C. Hull (5th edition). Additionally, you can plot each variable against the options call or put price to visualize the impact of each variable on the option price.
+            The app is built in Python, with a Tkinter GUI. The binomial pricing model uses numpy for calculations, and the graphs are plotted with matplotlib. The project was a great way of improving my understanding of option pricing models, and the mathematics behind them.
+            <br><h5>Screenshots:</h5>
+            <div class="screenshots-gallery">
+              <a href="/img/options_pricer/s1.png" data-fancybox="gallery" data-caption="Screenshot 1 - Call price">
+                <img src="/img/options_pricer/s1.png" alt="Screenshot 1 - Call price">
+              </a>
+              <a href="/img/options_pricer/s2.png" data-fancybox="gallery" data-caption="Screenshot 2 - Put price">
+                <img src="/img/options_pricer/s2.png" alt="Screenshot 2 - Put price">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -273,9 +403,9 @@
 
 </body>
 </html>
-</body>
-</html>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script>
   document.querySelectorAll('details').forEach(details => {
     details.addEventListener('toggle', () => {
@@ -312,32 +442,55 @@
     const description = project.querySelector('.project-description');
     const projectWidgetTop = document.querySelector('.project-widget-top');
     const projectWidgetBottom = document.querySelector('.project-widget-bottom');
-    const isWideScreen = window.innerWidth > 950; // Set your breakpoint for wide screens
+    const isWideScreen = window.innerWidth > 950;
 
-    // Hide all other project descriptions and remove from top widget
-    document.querySelectorAll('.project-description').forEach(desc => {
-      desc.style.display = 'none';
-    });
-
-    //If narrow screen, if clicked project is
-
-    if (isWideScreen) {
-      const topProject = projectWidgetTop.querySelector('.project');
-      if (topProject) {
-        projectWidgetBottom.appendChild(topProject);
-        topProject.classList.remove('top-widget-project');
-      }
+    // Store the original index in the bottom widget (if not already stored)
+    if (!project.dataset.originalIndex) {
+      project.dataset.originalIndex = Array.from(projectWidgetBottom.children).indexOf(project);
     }
 
-    if (description.style.display === 'block') {
-      print('here');
-      description.style.display = 'none';
+    const isInTopWidget = project.classList.contains('top-widget-project');
+
+    // If the project is in the top widget and clicked again, move it back to its original position
+    if (isInTopWidget && isWideScreen) {
+      description.style.display = 'none'; // Hide description if open
+      restoreToOriginalPosition(project, projectWidgetBottom); // Move back to original position
+      project.classList.remove('top-widget-project'); // Remove top-widget class
     } else {
-      description.style.display = 'block';
+      // If the screen is wide, handle project moving between top and bottom
       if (isWideScreen) {
+        const currentTopProject = projectWidgetTop.querySelector('.top-widget-project');
+
+        // If there's already a project in the top widget, move it back to its original position
+        if (currentTopProject) {
+          restoreToOriginalPosition(currentTopProject, projectWidgetBottom);
+          currentTopProject.classList.remove('top-widget-project');
+        }
+
+        // Move the clicked project to the top widget
         projectWidgetTop.appendChild(project);
         project.classList.add('top-widget-project');
       }
+
+      // Toggle the description visibility for the selected project
+      description.style.display = description.style.display === 'block' ? 'none' : 'block';
+    }
+    if (description.style.display === 'block') {
+      project.classList.add('no-hover');
+    } else {
+      project.classList.remove('no-hover');
+    }
+  }
+
+  function restoreToOriginalPosition(project, projectWidgetBottom) {
+    const originalIndex = parseInt(project.dataset.originalIndex, 10);
+    const siblingProjects = Array.from(projectWidgetBottom.children);
+
+    // Move the project back to its original position or append to the end if index is out of bounds
+    if (originalIndex >= siblingProjects.length) {
+      projectWidgetBottom.appendChild(project);
+    } else {
+      projectWidgetBottom.insertBefore(project, siblingProjects[originalIndex]);
     }
   }
 </script>
