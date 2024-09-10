@@ -2,6 +2,9 @@
   --dark-background: #7DA0BF;
   --light-background: #B2CADF;
   --header-color: #204B72;
+  --white-color: #dce9ef;
+  --brighter-white-color: #eef2f8;
+  --basic-grey: #1C1C1C;
 }
 
 .poppins-regular {
@@ -33,7 +36,7 @@ body {
 
 header {
   background: linear-gradient(180deg, rgba(20,49,75,1) 0%, rgba(32,75,114,1) 100%);
-  color: white;
+  color: var(--brighter-white-color);
   position: relative;
   padding: 6vw 0 6vw 0;
 }
@@ -54,7 +57,7 @@ header {
 }
 
 header p{
-  color: white;
+  color: var(--brighter-white-color);
 }
 
 header .wave .shape-fill {
@@ -115,7 +118,7 @@ header h1 {
 }
 
 .social-links a {
-  color: #f4f7fc;
+  color: var(--brighter-white-color);
   text-decoration: none;
   font-weight: bold;
   display: flex;
@@ -130,7 +133,7 @@ header h1 {
 }
 
 .social-links .pipe {
-  color: #f4f7fc;
+  color: var(--brighter-white-color);
   font-size: 1rem;
   margin: 0 10px;
   line-height: 1;
@@ -154,7 +157,16 @@ section {
   flex-direction: column;
   align-items: flex-start;
   min-height: 400px;
-  padding: 12rem 10vw 3rem ;
+  padding: 12rem 10vw 3rem;
+}
+
+section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
 }
 
 h2 {
@@ -169,17 +181,18 @@ h2 {
 h3{
   font-size: 1.6rem;
   font-weight: normal;
-  color:#1C1C1C
+  color: var(--basic-grey)
 }
 
 h4 {
   margin:  0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+ color: var(--basic-grey);
 }
 
 #year2-content, #year1-content {
   padding: 1rem;
-  background-color: var(--light-background);
+  background-color: var(--white-color);
 }
 
 li {
@@ -196,7 +209,7 @@ li {
 
 footer {
   background-color: #1f4e79;
-  color: white;
+  color: var(--white-color);
   padding: 1rem 0;
   text-align: center;
   margin: auto;
@@ -204,27 +217,27 @@ footer {
 
 footer p {
   font-size: 0.9rem;
-  color: #ffffff
+  color: var(--white-color)
 }
 
 footer p a{
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
 }
 
 footer p a:hover{
-  color: #f4f7fc;
+  color: var(--white-color);
 }
 
 a {
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
 }
 
 
 p {
   font-size: 1.4rem;
-  color:#1C1C1C;
+  color:var(--basic-grey);
 }
 
 ul {
@@ -232,11 +245,11 @@ ul {
   margin-top: 1rem;
   margin-left: 1.6rem;
   padding: 0;
-  color: #1C1C1C;
+  color: var(--basic-grey);
 }
 
 a {
-  color: #1C1C1C;
+  color: var(--basic-grey);
   text-decoration: underline;
 }
 
@@ -247,7 +260,7 @@ a:hover {
 ul li {
   margin-bottom: 1rem;
   font-size: 1.4rem;
-  color: #1C1C1C;
+  color: var(--basic-grey);
 }
 
 ul li::marker {
@@ -259,7 +272,7 @@ ul ul {
 }
 
 details {
-  color: var(--light-background);
+  color: var(--white-color);
   margin: 0.5rem;
   padding-bottom: 0.2rem;
 }
@@ -267,9 +280,9 @@ details {
 summary {
   display: flex;
   align-items: center;
-  background-color: var(--light-background);
+  background-color: var(--white-color);
   font-weight: bold;
-  color: #333;
+  color: var(--basic-grey);
 }
 
 summary:hover, .skill:hover {
@@ -289,7 +302,6 @@ details[open] summary:hover {
 
 summary h4 {
   margin: 0;
-  font-size: 1.2rem;
 }
 
 summary p {
@@ -299,7 +311,7 @@ summary p {
 
 details[open] div {
   border-radius: 0 0 10px 10px;
-  background-color: var(--light-background);
+  background-color: var(--white-color);
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -311,41 +323,103 @@ summary.expanded {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-summary.expanded:hover {
+summary.expanded:hover{
   transform: none;
 }
 
-.floating, .skill{
+.floating, .skill, .project{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   padding: 1rem;
-  transition: background-color 0.3s, transform 0.3s;
   cursor: pointer;
 }
 
-.skill {
-  background-color: #f0f0f0;
-  box-sizing: border-box;
-}
-
-.skills-widget {
+.project-widget-top, .project-widget-bottom {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-widget-bottom{
+  margin-top: 1rem;
+}
+
+.project-widget-top .project {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.project-widget-bottom .project {
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+}
+
+.project {
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 8px;
   padding: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: auto;
+}
+
+.skill, .project {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.skill{
+  background-color: var(--brighter-white-color);
+}
+
+.skill:hover, .project:hover {
+  transform: scale(1.05);
+}
+
+.skill.no-hover:hover, .project.no-hover:hover {
+  transform: none;
+}
+
+.skills-widget{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 8vw;
+  justify-content: center;
 }
 
 .skill-title {
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
-.skill-description {
+.skill-description, .project-description {
   display: none;
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 950px) {
+  .project {
+    width: 100%;
+  }
+
+  .skills-widget {
+    padding: 1rem;
+  }
+
+  .skill-title {
+    font-size: 1.2rem;
+  }
+
+  .skill-description {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
 
   .header-content {
     flex-direction: column;
@@ -361,6 +435,7 @@ summary.expanded:hover {
   section{
     padding: 10rem 1.5rem 2rem;
   }
+
   header h1{
     font-size: 10vw;
   }
@@ -380,19 +455,30 @@ summary.expanded:hover {
 
   h2 {
     font-size: 3rem;
-    line-height: 1.1;
+    line-height: 1.5;
     margin-top: -2.5rem;
   }
 
   h3{
+    font-size: 1.3rem;
+  }
+
+  summary h4{
     font-size: 1.2rem;
   }
 
   h4{
     margin-right: 0px;
+    font-size: 1.2rem;
   }
 
   .social-links a {
     font-size: 3vw;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1240px) {
+  .skills-widget {
+    margin: 0 -100px;
   }
 }

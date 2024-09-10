@@ -35,172 +35,235 @@
 </header>
 
 <section id="about" class="top">
-  <h2>About Me</h2>
-  <p>
-    Driven by a passion for technology, mathematics, machine learning, and finance, I am a Computer Science student studying at the University of Bath with a strong interest in pursuing a career in quantitative finance.
-    Currently honing my programming and problem-solving skills as a Software Engineer at Confluent during my year in industry, I am eager to apply my skills and gain further experience in quantitative finance through an internship in the summer of 2025.</p>
-  <div class="wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
+  <div class="content">
+    <h2>About Me</h2>
+    <p>
+      Driven by a passion for technology, mathematics, machine learning, and finance, I am a Computer Science student studying at the University of Bath with a strong interest in pursuing a career in quantitative finance.
+      Currently honing my programming and problem-solving skills as a Software Engineer at Confluent during my year in industry, I am eager to apply my skills and gain further experience in quantitative finance through an internship in the summer of 2025.</p>
+    <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
   </div>
 </section>
 
 <section id="projects" class="section-dark">
-  <h2>Project Portfolio</h2>
-  <p>
+  <div class="content">
+    <h2>Personal Projects</h2>
+    <div class="project-widget-top">
+    </div>
+    <div class="project-widget-bottom">
+      <div class="project" onclick="toggleProjectDescription(this)">
+        <div class="skill-icon">
+          <img src="/img/calkeeper/icon.png" alt="Project Icon">
+        </div>
+        <div class="skill-info">
+          <div class="skill-title">CalKeeper</div>
+          <div class="skill-subtitle">Electrical Test Instrument Logbook - a mobile app built in Flutter</div>
+          <div class="project-description">Blah blah blah blah blah</div>
+        </div>
+      </div>
+      <div class="project" onclick="toggleProjectDescription(this)">
+        <div class="skill-icon">
+          <img src="" alt="Project Icon">
+        </div>
+        <div class="skill-info">
+          <div class="skill-title">Options Pricer</div>
+          <div class="skill-subtitle">Options pricing calculator and price visualisation tool - desktop app built in Java</div>
+          <div class="project-description">Blah blah blah blah blah</div>
+        </div>
+      </div>
+      <div class="project" onclick="toggleProjectDescription(this)">
+        <div class="skill-icon">
+          <img src="" alt="Project Icon">
+        </div>
+        <div class="skill-info">
+          <div class="skill-title">Racket Ready</div>
+          <div class="skill-subtitle">Racket-sports matchmaking app - progressive web app built in React</div>
+          <div class="project-description"></div>
+        </div>
+      </div>
+      <div class="project" onclick="toggleProjectDescription(this)">
+        <div class="skill-icon">
+          <img src="" alt="Project Icon">
+        </div>
+        <div class="skill-info">
+          <div class="skill-title">Amaze</div>
+          <div class="skill-subtitle">Visualisation tool for graph search algorithms - desktop app built in Java</div>
+          <div class="project-description"></div>
+        </div>
+      </div>
+      <div class="project" onclick="toggleProjectDescription(this)">
+        <div class="skill-icon">
+          <img src="" alt="Project Icon">
+        </div>
+        <div class="skill-info">
+          <div class="skill-title">Hangman</div>
+          <div class="skill-subtitle">A single and multiplayer graphical hangman game - desktop app built in Java</div>
+          <div class="project-description"></div>
+        </div>
+      </div>
+    </div>
     <div class="wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
   </div>
 </section>
 
 <section id="skills" class="section-light">
-  <h2>Skills</h2>
-  <div class="skills-widget">
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Python</div>
-      <div class="skill-description">Used Python extensively at University in the AI, machine learning, and visual computing modules, for example to implement machine learning models using numpy and pytorch, and visual computing techniques using OpenCV, as well as for personal skills.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Golang</div>
-      <div class="skill-description">Self-taught Golang before starting my internship at Confluent by solving Leetcode problems, and have since used it extensively for skills related to Kubernetes, and writing unit tests.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Java</div>
-      <div class="skill-description">Self-taught Java to explore object-oriented programming, using it for a number of personal skills. Java has also been a key language used in my studies, particularly for the frontend of our 1st year group agile skill.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">C</div>
-      <div class="skill-description">Explored programming concepts such as memory management and bitwise operations using C at university in the systems architecture and programming modules, and then applied these skills in Arduino skills, including developing a smart-blind system that combined both hardware and software components.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Git</div>
-      <div class="skill-description">I Use GitHub and git commands in the command line daily, both as part of my internship and for personal skills.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Linux</div>
-      <div class="skill-description">I frequently use Linux commands both on my personal computer running the Linux Mint distribution, and as part of my internship, using them within macOS.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">LaTeX</div>
-      <div class="skill-description">Used LaTeX throughout university for writing reports and mathematical work, as well as incorporating LaTeX into the readmes of some personal skills.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">AWS</div>
-      <div class="skill-description">Experienced in using AWS for Kubernetes deployments during my internship at Confluent, including managing EKS clusters, configuring IAM roles, setting up VPCs and EC2 instances, and utilizing s3.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Google Cloud</div>
-      <div class="skill-description">Used Google Cloud Platform for both personal skills, including running Golang scripts with Cloud Functions, and during my internship at Confluent, managing GKE clusters.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Azure</div>
-      <div class="skill-description">Managed Microsoft Azure AKS clusters during my internship at Confluent</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Docker</div>
-      <div class="skill-description">Used Docker for containerizing applications and deploying them to kubernetes clusters as part of training for my internship at Confluent.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Terraform</div>
-      <div class="skill-description">Experienced using the infrastructure as code tool Terraform during my internship at Confluent for managing Kubernetes clusters across AWS, Azure, and GCP, and provisioning resources such as VPCs and Iam roles.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">HTML and CSS</div>
-      <div class="skill-description">Completed the freeCodeCamp HTML and CSS course, putting the skills into practice to make this website, and a website for a small business.</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">SQL</div>
-      <div class="skill-description">Gained a foundation in SQL and the relational algebra theory behind it in the Discrete Mathematics and Databases module, and put it into practise in a Golang web server skill that I built based on the book "Let's Go - Alex Edwards" .</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">React and Typescript</div>
-      <div class="skill-description">As part of the Experimental Systems skill at University, I worked in a team of 8 to develop "Racket Ready", a racket-sports matchmaking app, contributing to numerous components of the React and Typescript frontend</div>
-    </div>
-    <div class="skill" onclick="toggleDescription(this)">
-      <div class="skill-title">Quantitative Finance Knowledge</div>
-      <div class="skill-description">
-        I first read <em>"Quantitative Finance For Dummies" by Steve Bell</em> to explore some of the key concepts in quantitative finance. Currently, I'm working through <em>"Options, Futures, and Other Derivatives" by John Hull</em>, to gain a deeper understanding in some areas such as modelling stock price behavior and option pricing models. I've applied this knowledge through working through the exercises in the book, and implementing option pricing theories in a Python calculator and visualization tool.</div>
+  <div class="content">
+    <h2>Skills</h2>
+    <div class="skills-widget">
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Python</div>
+        <div class="skill-description">Used Python extensively at University in the AI, machine learning, and visual computing modules, for example to implement machine learning models using numpy and pytorch, and visual computing techniques using OpenCV, as well as for personal skills.</div>
       </div>
-    </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Golang</div>
+        <div class="skill-description">Self-taught Golang before starting my internship at Confluent by solving Leetcode problems, and have since used it extensively for skills related to Kubernetes, and writing unit tests.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Java</div>
+        <div class="skill-description">Self-taught Java to explore object-oriented programming, using it for a number of personal skills. Java has also been a key language used in my studies, particularly for the frontend of our 1st year group agile skill.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">C</div>
+        <div class="skill-description">Explored programming concepts such as memory management and bitwise operations using C at university in the systems architecture and programming modules, and then applied these skills in Arduino skills, including developing a smart-blind system that combined both hardware and software components.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Git</div>
+        <div class="skill-description">I Use GitHub and git commands in the command line daily, both as part of my internship and for personal skills.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Linux</div>
+        <div class="skill-description">I frequently use Linux commands both on my personal computer running the Linux Mint distribution, and as part of my internship, using them within macOS.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">LaTeX</div>
+        <div class="skill-description">Used LaTeX throughout university for writing reports and mathematical work, as well as incorporating LaTeX into the readmes of some personal skills.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">AWS</div>
+        <div class="skill-description">Experienced in using AWS for Kubernetes deployments during my internship at Confluent, including managing EKS clusters, configuring IAM roles, setting up VPCs and EC2 instances, and utilizing s3.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Google Cloud</div>
+        <div class="skill-description">Used Google Cloud Platform for both personal skills, including running Golang scripts with Cloud Functions, and during my internship at Confluent, managing GKE clusters.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Azure</div>
+        <div class="skill-description">Managed Microsoft Azure AKS clusters during my internship at Confluent</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Docker</div>
+        <div class="skill-description">Used Docker for containerizing applications and deploying them to kubernetes clusters as part of training for my internship at Confluent.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Terraform</div>
+        <div class="skill-description">Experienced using the infrastructure as code tool Terraform during my internship at Confluent for managing Kubernetes clusters across AWS, Azure, and GCP, and provisioning resources such as VPCs and Iam roles.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">HTML and CSS</div>
+        <div class="skill-description">Completed the freeCodeCamp HTML and CSS course, putting the skills into practice to make this website, and a website for a small business.</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">SQL</div>
+        <div class="skill-description">Gained a foundation in SQL and the relational algebra theory behind it in the Discrete Mathematics and Databases module, and put it into practise in a Golang web server skill that I built based on the book "Let's Go - Alex Edwards" .</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">React and Typescript</div>
+        <div class="skill-description">As part of the Experimental Systems skill at University, I worked in a team of 8 to develop "Racket Ready", a racket-sports matchmaking app, contributing to numerous components of the React and Typescript frontend</div>
+      </div>
+      <div class="skill" onclick="toggleSkillDescription(this)">
+        <div class="skill-title">Quantitative Finance Knowledge</div>
+        <div class="skill-description">
+          I first read <em>"Quantitative Finance For Dummies" by Steve Bell</em> to explore some of the key concepts in quantitative finance. Currently, I'm working through <em>"Options, Futures, and Other Derivatives" by John Hull</em>, to gain a deeper understanding in some areas such as modelling stock price behavior and option pricing models. I've applied this knowledge through working through the exercises in the book, and implementing option pricing theories in a Python calculator and visualization tool.</div>
+        </div>
+      </div>
 
-    <div class="wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
+      <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
   </div>
 </section>
 
 <section id="education" class="section-dark">
-  <h2>Education</h2>
+  <div class="content">
+    <h2>Education</h2>
 
-  <h3><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
+    <h3><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
 
-  <details>
-    <summary class="floating"><h4 id="year2-header">2nd year modules | 81%</h4><p>▶</p></summary>
-    <div id="year2-content">
-      <ul>
-        <li><strong>Machine learning</strong>: 85% – Studied neural networks (including convolutional, GANs, large-language models), and other supervised/unsupervised techniques such as regression, Naive-Bayes, PCA, and Gaussian Mixture Models - implementing each in Python.</li>
-        <li><strong>Data Structures and Algorithms</strong>: 85% – Learnt about the mathematics behind sorting, hash tables, graphs, and trees, data collections, and cryptography, with a focus on proving the correctness of the algorithms, and determining their complexity, alongside implementing each in Java.</li>
-        <li><strong>Experimental Systems Project</strong>: 73% – Took "Racket Ready", a racket-sports matchmaking app concept, through the entire software engineering lifecycle in a team of 8, from coming up with the initial idea, to requirements design, agile development, testing, and evaluation, ultimately producing a mobile app in React.</li>
-        <li><strong>Foundations of Computation</strong>: 84% – Explored fundamental models of computation, including deterministic and non-deterministic finite automata, regular and context-free languages, Turing machines, and the Church-Turing thesis.</li>
-        <li><strong>Comparative Programming Languages</strong>: 93% – Discussed the question "how do you pick the right programming language", by comparing concepts such as types, compilers, memory management, programming paradigms, and object-oriented programming. </li>
-        <li><strong>Fundamentals of Visual Computing</strong>: 89% – Investigated visual computing concepts from image filtering, the Fourier Transform, and lighting models, to curves, and textures rendering, and then implementing these concepts in Python.</li>
-        <li><strong>Functional Programming</strong>: 63% –  Studied lambda calculus, the theoretical foundation of functional programming, and applied the theory to programming in Haskell.</li>
-        <li><strong>Human-Computer Interaction and User-Experience</strong>: 81% – Applied HCI and user-experience theories to design a VR "Lego Builder" app, working in a group to develop low and high-fidelity prototypes, conduct user testing, and perform statistical analysis on the data.</li>
-      </ul>
+    <details>
+      <summary class="floating"><h4 id="year2-header">2nd year modules | 81%</h4><p>▶</p></summary>
+      <div id="year2-content">
+        <ul>
+          <li><strong>Machine learning</strong>: 85% – Studied neural networks (including convolutional, GANs, large-language models), and other supervised/unsupervised techniques such as regression, Naive-Bayes, PCA, and Gaussian Mixture Models - implementing each in Python.</li>
+          <li><strong>Data Structures and Algorithms</strong>: 85% – Learnt about the mathematics behind sorting, hash tables, graphs, and trees, data collections, and cryptography, with a focus on proving the correctness of the algorithms, and determining their complexity, alongside implementing each in Java.</li>
+          <li><strong>Experimental Systems Project</strong>: 73% – Took "Racket Ready", a racket-sports matchmaking app concept, through the entire software engineering lifecycle in a team of 8, from coming up with the initial idea, to requirements design, agile development, testing, and evaluation, ultimately producing a mobile app in React.</li>
+          <li><strong>Foundations of Computation</strong>: 84% – Explored fundamental models of computation, including deterministic and non-deterministic finite automata, regular and context-free languages, Turing machines, and the Church-Turing thesis.</li>
+          <li><strong>Comparative Programming Languages</strong>: 93% – Discussed the question "how do you pick the right programming language", by comparing concepts such as types, compilers, memory management, programming paradigms, and object-oriented programming. </li>
+          <li><strong>Fundamentals of Visual Computing</strong>: 89% – Investigated visual computing concepts from image filtering, the Fourier Transform, and lighting models, to curves, and textures rendering, and then implementing these concepts in Python.</li>
+          <li><strong>Functional Programming</strong>: 63% –  Studied lambda calculus, the theoretical foundation of functional programming, and applied the theory to programming in Haskell.</li>
+          <li><strong>Human-Computer Interaction and User-Experience</strong>: 81% – Applied HCI and user-experience theories to design a VR "Lego Builder" app, working in a group to develop low and high-fidelity prototypes, conduct user testing, and perform statistical analysis on the data.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary class="floating"><h4 id="year1-header">1st year modules | 77% </h4><p>▶</p></summary>
+      <div id="year1-content">
+        <ul>
+          <li id="spam"><strong>Software Processes and Modelling</strong>: 77% – Led a team of 5 as Scrum Master in developing a fitness app. I led the development of the Java frontend, organised meetings, and learnt how software projects can be effectively organised using agile development and object-oriented programming.</li>
+          <li><strong>Mathematics for Computation</strong>: 78% – Studied fundamental topics in mathematical analysis crucial to Computer Science, including linear algebra, derivatives, and series.</li>
+          <li><strong>Principles of Programming</strong>: 79% – Gained the skills to quickly pick up and solve problems in any language. I became proficient in Python and Java, and explored memory management with C.</li>
+          <li><strong>Discrete Mathematics and Databases</strong>: 82% – Developed knowledge of logic, maps, and relational algebra, then applied it to databases and SQL.</li>
+          <li><strong>Artificial Intelligence</strong>: 69% – Explored a broad range of AI concepts, from search techniques and constraint satisfaction, to probability and machine learning. I used Python to implement each concept, with a focus on writing fast code, and was inspired to explore deep learning beyond the unit.</li>
+          <li><strong>Computer Systems Architecture</strong>: 79% – Gained a deeper understanding of how computers work at varying levels of abstraction, focusing on logic, hardware, and data representation, which was put into practise with group Arduino projects using C++, while semester 2 focused on operating systems and networks.</li>
+        </ul>
+      </div>
+    </details>
+
+    <h3 class="gapAbove"><strong>A-Levels</strong> - Wymondham College (09/2020 - 07/2022)</h3>
+    <h4 class="gapUnder">A* Maths, A Further Maths, A* Physics, A* Geography</h4>
+    <h3><strong>GCSEs</strong>, Wymondham College (09/2015 - 07/2020)</h3>
+    <h4>10 grade 9s, 1 grade 8, and 1 grade 7</h4>
+    <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
     </div>
-  </details>
-
-  <details>
-    <summary class="floating"><h4 id="year1-header">1st year modules | 77% </h4><p>▶</p></summary>
-    <div id="year1-content">
-      <ul>
-        <li id="spam"><strong>Software Processes and Modelling</strong>: 77% – Led a team of 5 as Scrum Master in developing a fitness app. I led the development of the Java frontend, organised meetings, and learnt how software projects can be effectively organised using agile development and object-oriented programming.</li>
-        <li><strong>Mathematics for Computation</strong>: 78% – Studied fundamental topics in mathematical analysis crucial to Computer Science, including linear algebra, derivatives, and series.</li>
-        <li><strong>Principles of Programming</strong>: 79% – Gained the skills to quickly pick up and solve problems in any language. I became proficient in Python and Java, and explored memory management with C.</li>
-        <li><strong>Discrete Mathematics and Databases</strong>: 82% – Developed knowledge of logic, maps, and relational algebra, then applied it to databases and SQL.</li>
-        <li><strong>Artificial Intelligence</strong>: 69% – Explored a broad range of AI concepts, from search techniques and constraint satisfaction, to probability and machine learning. I used Python to implement each concept, with a focus on writing fast code, and was inspired to explore deep learning beyond the unit.</li>
-        <li><strong>Computer Systems Architecture</strong>: 79% – Gained a deeper understanding of how computers work at varying levels of abstraction, focusing on logic, hardware, and data representation, which was put into practise with group Arduino projects using C++, while semester 2 focused on operating systems and networks.</li>
-      </ul>
-    </div>
-  </details>
-
-  <h3 class="gapAbove"><strong>A-Levels</strong> - Wymondham College (09/2020 - 07/2022)</h3>
-  <h4 class="gapUnder">A* Maths, A Further Maths, A* Physics, A* Geography</h4>
-  <h3><strong>GCSEs</strong>, Wymondham College (09/2015 - 07/2020)</h3>
-  <h4>10 grade 9s, 1 grade 8, and 1 grade 7</h4>
-  <div class="wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
   </div>
 </section>
 
 <section id="work-experience" class="section-light">
-  <h2>Work Experience</h2>
-  <h3 id="confluent-internship"><strong>Software Engineering Intern</strong> - Confluent (05/2024 - 05/2025)</h3>
-  <p>I am currently on a software engineering internship at Confluent, working as a cloud infrastructure engineer within the Kubernetes platform team –
-    the team that manages the Kubernetes clusters that run Confluent Cloud, a Kafka-based real-time data streaming service.
-    I’ve gained hands-on experience with Kubernetes, Golang, Linux and Git commands, Terraform, AWS, GCP, Azure, Docker, and Helm, by delivering several projects, including:
-  <ul>
-    <li>Reducing Datadog metric cardinality, resulting in approximately $30,000/month savings.</li>
-    <li>Resolving an Azure Storage Accounts quota monitoring issue by creating new metrics and unit tests using Go.</li>
-    <li>Migrating several internal app installations from Terraform to Flux using Helm charts and kubectl.</li>
-  </ul>
-  <h3 class="gapAbove"><strong>Peer Assisted Learning Leader</strong> - University of Bath (09/2023 - 05/2024)</h3>
-  <p class="gapUnder">I volunteered to lead multiple tutorial-style sessions per week, as part of a team, to the 1st year Computer Science cohort, recapping all the material learnt in lectures, getting regular experience presenting to a large group, alongside keeping the Computer Science content I learnt in 1st year fresh in my memory.</p>
-  <h3><strong>Outdoor Activities Instructor</strong> - Hautbois Activity Centre (04/2022 - 05/2024)</h3>
-  <p>I led a variety of outdoor activities to groups of young people, taking responsibility over
-    participants and instructing enthusiastically to the highest standards, encouraging teamwork
-    amongst groups, and often working collaboratively with other instructors.
-  </p>
-  <div class="wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
+  <div class="content">
+    <h2>Work Experience</h2>
+    <h3 id="confluent-internship"><strong>Software Engineering Internship</strong> - Confluent (05/2024 - 05/2025)</h3>
+    <p>I am currently on a software engineering internship at Confluent, working as a cloud infrastructure engineer within the Kubernetes platform team –
+      the team that manages the Kubernetes clusters that run Confluent Cloud, a Kafka-based real-time data streaming service.
+      I’ve gained hands-on experience with Kubernetes, Golang, Linux and Git commands, Terraform, AWS, GCP, Azure, Docker, and Helm, by delivering several projects, including:
+    <ul>
+      <li>Reducing Datadog metric cardinality, resulting in approximately $30,000/month savings.</li>
+      <li>Resolving an Azure Storage Accounts quota monitoring issue by creating new metrics and unit tests using Go.</li>
+      <li>Migrating several internal app installations from Terraform to Flux using Helm charts and kubectl.</li>
+    </ul>
+    <h3 class="gapAbove"><strong>Peer Assisted Learning Leader</strong> - University of Bath (09/2023 - 05/2024)</h3>
+    <p class="gapUnder">I volunteered to lead multiple tutorial-style sessions per week, as part of a team, to the 1st year Computer Science cohort, recapping all the material learnt in lectures, getting regular experience presenting to a large group, alongside keeping the Computer Science content I learnt in 1st year fresh in my memory.</p>
+    <h3><strong>Outdoor Activities Instructor</strong> - Hautbois Activity Centre (04/2022 - 05/2024)</h3>
+    <p>I led a variety of outdoor activities to groups of young people, taking responsibility over
+      participants and instructing enthusiastically to the highest standards, encouraging teamwork
+      amongst groups, and often working collaboratively with other instructors.
+    </p>
+    <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
   </div>
 </section>
 
@@ -225,27 +288,56 @@
     });
   });
 
-  function toggleDescription(project) {
-    const description = project.querySelector('.project-description');
+  function toggleSkillDescription(skill) {
+    const description = skill.querySelector('.skill-description');
 
-    // Hide all other project descriptions
-    document.querySelectorAll('.project-description').forEach(desc => {
-      if (desc !== description) {
-        desc.style.display = 'none';
+    // Hide all other project descriptions and remove .no-hover class
+    document.querySelectorAll('.skill').forEach(skill => {
+      if (skill !== skill) {
+        skill.classList.remove('no-hover');
+        skill.querySelector('.skill-description').style.display = 'none';
       }
     });
 
-    // Toggle the clicked project's description
     if (description.style.display === 'block') {
       description.style.display = 'none';
+      skill.classList.remove('no-hover');
     } else {
       description.style.display = 'block';
+      skill.classList.add('no-hover');
     }
   }
 
-  // Adjust project width on window resize
-  window.addEventListener('resize', adjustProjectWidth);
-  // Adjust project width when the page first loads
-  window.addEventListener('load', adjustProjectWidth);
+  function toggleProjectDescription(project) {
+    const description = project.querySelector('.project-description');
+    const projectWidgetTop = document.querySelector('.project-widget-top');
+    const projectWidgetBottom = document.querySelector('.project-widget-bottom');
+    const isWideScreen = window.innerWidth > 950; // Set your breakpoint for wide screens
 
+    // Hide all other project descriptions and remove from top widget
+    document.querySelectorAll('.project-description').forEach(desc => {
+      desc.style.display = 'none';
+    });
+
+    //If narrow screen, if clicked project is
+
+    if (isWideScreen) {
+      const topProject = projectWidgetTop.querySelector('.project');
+      if (topProject) {
+        projectWidgetBottom.appendChild(topProject);
+        topProject.classList.remove('top-widget-project');
+      }
+    }
+
+    if (description.style.display === 'block') {
+      print('here');
+      description.style.display = 'none';
+    } else {
+      description.style.display = 'block';
+      if (isWideScreen) {
+        projectWidgetTop.appendChild(project);
+        project.classList.add('top-widget-project');
+      }
+    }
+  }
 </script>
