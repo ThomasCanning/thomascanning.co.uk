@@ -207,6 +207,15 @@ footer p {
   color: #ffffff
 }
 
+footer p a{
+  color: white;
+  text-decoration: none;
+}
+
+footer p a:hover{
+  color: #f4f7fc;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -377,6 +386,10 @@ summary.expanded:hover {
 
   h3{
     font-size: 1.2rem;
+  }
+
+  h4{
+    margin-right: 0px;
   }
 
   .social-links a {
