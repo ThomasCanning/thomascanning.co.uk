@@ -223,26 +223,26 @@ ul {
   margin-top: 1rem;
   margin-left: 1.6rem;
   padding: 0;
-  color: #1C1C1C; /* Text color for list items */
+  color: #1C1C1C;
 }
 
 a {
-  color: #1C1C1C; /* Text color for links */
+  color: #1C1C1C;
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--header-color); /* Hover color for links */
+  color: var(--header-color);
 }
 
 ul li {
   margin-bottom: 1rem;
-  font-size: 1.4rem; /* Adjust font size if needed */
-  color: #1C1C1C; /* Ensure list item color matches the rest of the text */
+  font-size: 1.4rem;
+  color: #1C1C1C;
 }
 
 ul li::marker {
-  color: var(--header-color); /* Custom color for list markers */
+  color: var(--header-color);
 }
 
 ul ul {
@@ -269,9 +269,9 @@ summary:hover, .project:hover {
 }
 
 details[open] summary {
-  border-radius: 10px 10px 0 0; /* Rounded corners only at the top when expanded */
-  transform: none; /* Disable scale effect when expanded */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Maintain shadow effect */
+  border-radius: 10px 10px 0 0;
+  transform: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 details[open] summary:hover {
@@ -289,7 +289,7 @@ summary p {
 }
 
 details[open] div {
-  border-radius: 0 0 10px 10px; /* Rounded corners only at the bottom */
+  border-radius: 0 0 10px 10px;
   background-color: var(--light-background);
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -297,9 +297,9 @@ details[open] div {
 }
 
 summary.expanded {
-  border-radius: 10px 10px 0 0; /* Rounded corners only at the top when expanded */
-  transform: none; /* Disable scale effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Maintain shadow effect */
+  border-radius: 10px 10px 0 0;
+  transform: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 summary.expanded:hover {
