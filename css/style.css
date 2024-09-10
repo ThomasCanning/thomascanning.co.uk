@@ -272,7 +272,7 @@ summary {
   color: #333;
 }
 
-summary:hover, .project:hover {
+summary:hover, .skill:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -315,7 +315,7 @@ summary.expanded:hover {
   transform: none;
 }
 
-.floating, .project{
+.floating, .skill{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   padding: 1rem;
@@ -323,23 +323,23 @@ summary.expanded:hover {
   cursor: pointer;
 }
 
-.project {
+.skill {
   background-color: #f0f0f0;
   box-sizing: border-box;
 }
 
-.projects-widget {
+.skills-widget {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
 }
 
-.project-title {
+.skill-title {
   font-weight: bold;
 }
 
-.project-description {
+.skill-description {
   display: none;
   margin-top: 0.5rem;
   font-size: 0.9rem;
