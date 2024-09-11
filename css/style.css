@@ -216,7 +216,7 @@ footer {
 }
 
 footer p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--white-color)
 }
 
@@ -484,6 +484,10 @@ h5{
   grid-template-columns: repeat(3, 1fr);
 }
 
+#racket_ready{
+  grid-template-columns: repeat(4, 1fr);
+}
+
 #hangman{
   grid-template-columns: repeat(2, 1fr);
 }
@@ -523,10 +527,6 @@ h5{
 
   #amaze{
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  #options{
-    grid-template-columns: repeat(1, 1fr);
   }
 
   #hangman{
@@ -610,6 +610,9 @@ h5{
 
   .social-links a {
     font-size: 3vw;
+  }
+  footer p {
+    font-size: 0.9rem;
   }
 }
 
