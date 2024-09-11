@@ -473,19 +473,19 @@ h5{
 }
 
 #calkeeper{
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #options{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #amaze{
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #hangman{
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .screenshots-gallery img {
@@ -495,9 +495,6 @@ h5{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
 }
 
-#options{
-  padding: 10px;
-}
 
 @media (min-width: 1500px) {
   .project-widget-bottom .project {
@@ -505,6 +502,7 @@ h5{
     max-width: calc(50% - 1rem);
   }
 }
+
 @media (max-width: 1500px) {
   .project {
     flex: 1 1 100%;
@@ -518,20 +516,21 @@ h5{
 }
 
 @media (max-width: 950px) {
-  #calkeeper{
-    grid-template-columns: repeat(auto-fit, 200px);
-  }
 
-  #options{
-    grid-template-columns: repeat(auto-fit, 200px);
+  #calkeeper{
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #amaze{
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #options{
+    grid-template-columns: repeat(1, 1fr);
   }
 
   #hangman{
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .skill-icon {
