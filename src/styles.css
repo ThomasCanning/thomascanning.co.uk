@@ -1,5 +1,46 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand palette */
+  --color-brand: #204B72;           /* primary brand blue */
+  --color-brand-dark: #14314B;      /* darker shade for gradients/headers */
+  --color-brand-muted: #B2CADF;     /* light brand tint */
+
+  --color-on-brand: #eef2f8;
+
+  /* Footer */
+  --color-footer-bg: #1f4e79;
+  --color-footer-fg: #dce9ef;
+
+  /* Shadows (used in drop-shadow/shadow arbitrary values) */
+  --color-shadow-strong: rgba(0, 0, 0, 0.4);
+  --color-shadow-medium: rgba(0, 0, 0, 0.3);
+
+  /* Generic neutrals (if needed elsewhere) */
+  --color-surface: #ffffff;
+  --color-on-surface: #111827;
+
+  /* Additional brand tints and surfaces */
+  --color-brand-mid: #7DA0BF;
+  --color-panel: #dce9ef;
+  --color-surface-alt: #eef2f8;
+
+  /* Typography/body */
+  --color-body: #2b2b2b;
+
+  /* Accent/deep for gradients */
+  --color-accent-strong: #034B72;
+  --color-deep: #080D28;
+
+  /* Extra shadow scales */
+  --color-shadow-light: rgba(0, 0, 0, 0.2);
+  --color-shadow-stronger: rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply m-0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
