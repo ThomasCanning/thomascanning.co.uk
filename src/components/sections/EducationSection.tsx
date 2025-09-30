@@ -2,22 +2,22 @@ import Wave from '../Wave'
 
 export default function EducationSection() {
   return (
-    <section id="education" className="relative scroll-mt-24 bg-[#7DA0BF] flex flex-col items-start min-h-[400px] pt-[12rem] px-[10vw] pb-12">
-      <Wave fill="#B2CADF" />
+    <section id="education" className="relative scroll-mt-24 bg-brand-mid flex flex-col items-start min-h-[400px] pt-[12rem] px-[10vw] pb-12">
+      <Wave fill="var(--color-brand-muted)" />
       <div className="w-full max-w-[1800px] mx-auto">
-        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] bg-[linear-gradient(252deg,rgba(3,75,114,1)_0%,rgba(8,13,40,1)_100%)] bg-clip-text text-transparent">
+        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] bg-[linear-gradient(252deg,var(--color-accent-strong)_0%,var(--color-deep)_100%)] bg-clip-text text-transparent">
           Education
         </h2>
 
-        <h3 className="text-[1.6rem] font-normal text-[#2b2b2b]"><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
+        <h3 className="text-[1.6rem] font-normal text-body"><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
 
-        <details className="group m-2 rounded-[10px] overflow-hidden bg-[#dce9ef] shadow-[0_4px_8px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.01] open:hover:scale-100">
-          <summary className="flex items-center font-bold text-[#2b2b2b] p-2 cursor-pointer">
+        <details className="group m-2 rounded-[10px] overflow-hidden bg-panel shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform hover:scale-[1.01] open:hover:scale-100">
+          <summary className="flex items-center font-bold text-body p-2 cursor-pointer">
             <h4 className="m-0 text-[1.4rem]">2nd year modules | 81%</h4>
             <p className="pl-2 pb-[2px] text-[1.1rem] transition-transform group-open:rotate-90">▶</p>
           </summary>
           <div className="p-4">
-            <ul className="list-[square] mt-4 ml-6 text-[#2b2b2b] text-[1.4rem]">
+            <ul className="list-[square] mt-4 ml-6 text-body text-[1.4rem]">
               <li><strong>Machine learning</strong>: 85% – Studied neural networks (including convolutional, GANs, large-language models), and other supervised/unsupervised techniques such as regression, Naive-Bayes, PCA, and Gaussian Mixture Models - implementing each in Python.</li>
               <li><strong>Data Structures and Algorithms</strong>: 85% – Learnt about the mathematics behind sorting, hash tables, graphs, and trees, data collections, and cryptography, with a focus on proving the correctness of the algorithms, and determining their complexity, alongside implementing each in Java.</li>
               <li><strong>Experimental Systems Project</strong>: 73% – Took "Racket Ready", a racket-sports matchmaking app concept, through the entire software engineering lifecycle in a team of 8, from coming up with the initial idea, to requirements design, agile development, testing, and evaluation, ultimately producing a mobile app in React.</li>
@@ -30,13 +30,13 @@ export default function EducationSection() {
           </div>
         </details>
 
-        <details className="group m-2 rounded-[10px] overflow-hidden bg-[#dce9ef] shadow-[0_4px_8px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.01] open:hover:scale-100">
-          <summary className="flex items-center font-bold text-[#2b2b2b] p-2 cursor-pointer">
+        <details className="group m-2 rounded-[10px] overflow-hidden bg-panel shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform hover:scale-[1.01] open:hover:scale-100">
+          <summary className="flex items-center font-bold text-body p-2 cursor-pointer">
             <h4 className="m-0 text-[1.4rem]">1st year modules | 77% </h4>
             <p className="pl-2 pb-[2px] text-[1.1rem] transition-transform group-open:rotate-90">▶</p>
           </summary>
           <div className="p-4">
-            <ul className="list-[square] mt-4 ml-6 text-[#2b2b2b] text-[1.4rem]">
+            <ul className="list-[square] mt-4 ml-6 text-body text-[1.4rem]">
               <li id="spam"><strong>Software Processes and Modelling</strong>: 77% – Led a team of 5 as Scrum Master in developing a fitness app. I led the development of the Java frontend, organised meetings, and learnt how software projects can be effectively organised using agile development and object-oriented programming.</li>
               <li><strong>Mathematics for Computation</strong>: 78% – Studied fundamental topics in mathematical analysis crucial to Computer Science, including linear algebra, derivatives, and series.</li>
               <li><strong>Principles of Programming</strong>: 79% – Gained the skills to quickly pick up and solve problems in any language. I became proficient in Python and Java, and explored memory management with C.</li>
@@ -47,10 +47,10 @@ export default function EducationSection() {
           </div>
         </details>
 
-        <h3 className="mt-2 text-[1.6rem] font-normal text-[#2b2b2b]"><strong>A-Levels</strong> - Wymondham College (09/2020 - 07/2022)</h3>
-        <h4 className="mb-6 text-[1.4rem] text-[#2b2b2b]">A* Maths, A Further Maths, A* Physics, A* Geography</h4>
-        <h3 className="text-[1.6rem] font-normal text-[#2b2b2b]"><strong>GCSEs</strong>, Wymondham College (09/2015 - 07/2020)</h3>
-        <h4 className="text-[1.4rem] text-[#2b2b2b]">10 grade 9s, 1 grade 8, and 1 grade 7</h4>
+        <h3 className="mt-2 text-[1.6rem] font-normal text-body"><strong>A-Levels</strong> - Wymondham College (09/2020 - 07/2022)</h3>
+        <h4 className="mb-6 text-[1.4rem] text-body">A* Maths, A Further Maths, A* Physics, A* Geography</h4>
+        <h3 className="text-[1.6rem] font-normal text-body"><strong>GCSEs</strong>, Wymondham College (09/2015 - 07/2020)</h3>
+        <h4 className="text-[1.4rem] text-body">10 grade 9s, 1 grade 8, and 1 grade 7</h4>
       </div>
     </section>
   )

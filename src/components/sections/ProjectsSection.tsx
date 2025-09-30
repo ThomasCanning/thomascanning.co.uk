@@ -23,7 +23,7 @@ const projects: Project[] = [
     description: (
       <>
         CalKeeper is the comprehensive solution for helping UK electricians maintain accurate and up-to-date records of their electrical test instruments. Electrical test instruments must be calibrated every 3 years, and up-to-date records must be kept each month to ensure the instrument remains within calibration tolerance. With CalKeeper, electricians can:
-        <ul className="list-[square] mt-4 ml-6 text-[#2b2b2b]">
+        <ul className="list-[square] mt-4 ml-6 text-body">
           <li>Record instrument insulation, continuity, earth loop, and RCD values, with the flexibility to enter as much or as little detail as needed.</li>
           <li>Export reports for each instrument to PDF at the tap of a button.</li>
           <li>Receive automatic alerts if values deviate from baseline readings.</li>
@@ -168,7 +168,7 @@ function ProjectCard({
 
   return (
     <div
-      className={`bg-[#dce9ef] border border-[#dce9ef] rounded-[8px] p-4 flex items-start gap-4 shadow-[0_4px_8px_rgba(0,0,0,0.5)] transition-transform ${
+      className={`bg-panel border border-panel rounded-[8px] p-4 flex items-start gap-4 shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform ${
         expanded ? 'cursor-pointer' : 'cursor-pointer hover:scale-[1.05]'
       }`}
       onClick={onToggle}
@@ -225,7 +225,7 @@ function ProjectCard({
                 }}
               >
                 {project.screenshots.map((s, i) => (
-                  <img key={i} src={s.src} alt={s.alt} className="w-full h-auto rounded-lg shadow" />
+                  <img key={i} src={s.src} alt={s.alt} className="w-full h-auto rounded-lg shadow-[0_4px_8px_var(--color-shadow-light)]" />
                 ))}
               </div>
             )}
