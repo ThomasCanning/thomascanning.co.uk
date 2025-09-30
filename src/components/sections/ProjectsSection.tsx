@@ -123,7 +123,7 @@ export default function ProjectsSection() {
     <section id="projects" className="relative scroll-mt-24 bg-brand-mid flex flex-col items-start min-h-[400px] pt-[12rem] px-[10vw] pb-12">
       <Wave fill="var(--color-brand-muted)" />
       <div className="w-full max-w-[1800px] mx-auto">
-        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] bg-[linear-gradient(252deg,var(--color-accent-strong)_0%,var(--color-deep)_100%)] bg-clip-text text-transparent">
+        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] font-extrabold bg-gradient-to-tr from-[var(--color-accent-strong)] to-[var(--color-deep)] bg-clip-text text-transparent">
           Personal Projects
         </h2>
 
@@ -137,7 +137,7 @@ export default function ProjectsSection() {
         </div>
 
         {/* Bottom grid of projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 w-full">
           {projects.filter((p) => p.id !== selectedId).map((p) => (
             <ProjectCard
               key={p.id}

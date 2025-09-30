@@ -2,18 +2,56 @@ import Wave from '../Wave'
 
 export default function EducationSection() {
   return (
-    <section id="education" className="relative scroll-mt-24 bg-brand-mid flex flex-col items-start min-h-[400px] pt-[12rem] px-[10vw] pb-12">
-      <Wave fill="var(--color-brand-muted)" />
+    <section id="education" className="relative scroll-mt-24 bg-brand-muted flex flex-col items-start min-h-[400px] pt-[12rem] px-[10vw] pb-12">
+      <Wave fill="var(--color-brand-mid)" />
       <div className="w-full max-w-[1800px] mx-auto">
-        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] bg-[linear-gradient(252deg,var(--color-accent-strong)_0%,var(--color-deep)_100%)] bg-clip-text text-transparent">
+        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] font-extrabold bg-gradient-to-tr from-[var(--color-accent-strong)] to-[var(--color-deep)] bg-clip-text text-transparent">
           Education
         </h2>
 
-        <h3 className="text-[1.6rem] font-normal text-body"><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
+        <h3 className="text-[1.6rem] font-semibold text-body"><strong>BSc Computer Science with Year in Industry</strong> - University of Bath (09/2022 - 06/2026)</h3>
 
         <details className="group m-2 rounded-[10px] overflow-hidden bg-panel shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform hover:scale-[1.01] open:hover:scale-100">
           <summary className="flex items-center font-bold text-body p-2 cursor-pointer">
-            <h4 className="m-0 text-[1.4rem]">2nd year modules | 81%</h4>
+            <h4 className="m-1 text-[1.4rem] font-semibold">4th year modules | ongoing – Expected First</h4>
+            <p className="pl-2 pb-[2px] text-[1.1rem] transition-transform group-open:rotate-90">▶</p>
+          </summary>
+          <div className="p-4">
+            <ul className="list-[square] mt-4 ml-6 text-body text-[1.4rem]">
+              <li><strong>Computational Complexity</strong></li>
+              <li><strong>Logic and Semantics</strong></li>
+              <li><strong>Advanced Computer Graphics</strong></li>
+              <li><strong>Computer Vision</strong></li>
+              <li><strong>Entrepreneurship</strong></li>
+            </ul>
+          </div>
+        </details>
+
+        <details className="group m-2 rounded-[10px] overflow-hidden bg-panel shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform hover:scale-[1.01] open:hover:scale-100">
+          <summary className="flex items-center font-bold text-body p-2 cursor-pointer">
+            <h4 className="m-1 text-[1.4rem] font-semibold">3rd year – Placement Year</h4>
+            <p className="pl-2 pb-[2px] text-[1.1rem] transition-transform group-open:rotate-90">▶</p>
+          </summary>
+          <div className="p-4">
+            <p className="text-body text-[1.2rem] leading-relaxed mb-4">
+              14+ month placement at Confluent on the Kubernetes platform team, contributing to a company‑wide continuous deployment platform and taking ownership of its UI.
+            </p>
+            <div className="w-full max-w-[960px] aspect-video rounded-[10px] overflow-hidden shadow-[0_4px_8px_var(--color-shadow-stronger)]">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/9bP2CBmqL7w"
+                title="Placement Year Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </details>
+
+        <details className="group m-2 rounded-[10px] overflow-hidden bg-panel shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform hover:scale-[1.01] open:hover:scale-100">
+          <summary className="flex items-center font-bold text-body p-2 cursor-pointer">
+            <h4 className="m-1 text-[1.4rem] font-semibold">2nd year modules | 81%</h4>
             <p className="pl-2 pb-[2px] text-[1.1rem] transition-transform group-open:rotate-90">▶</p>
           </summary>
           <div className="p-4">
@@ -32,7 +70,7 @@ export default function EducationSection() {
 
         <details className="group m-2 rounded-[10px] overflow-hidden bg-panel shadow-[0_4px_8px_var(--color-shadow-stronger)] transition-transform hover:scale-[1.01] open:hover:scale-100">
           <summary className="flex items-center font-bold text-body p-2 cursor-pointer">
-            <h4 className="m-0 text-[1.4rem]">1st year modules | 77% </h4>
+            <h4 className="m-1 text-[1.4rem] font-semibold">1st year modules | 77% </h4>
             <p className="pl-2 pb-[2px] text-[1.1rem] transition-transform group-open:rotate-90">▶</p>
           </summary>
           <div className="p-4">
@@ -47,9 +85,9 @@ export default function EducationSection() {
           </div>
         </details>
 
-        <h3 className="mt-2 text-[1.6rem] font-normal text-body"><strong>A-Levels</strong> - Wymondham College (09/2020 - 07/2022)</h3>
+        <h3 className="mt-2 text-[1.6rem] font-semibold text-body"><strong>A-Levels</strong> - Wymondham College (09/2020 - 07/2022)</h3>
         <h4 className="mb-6 text-[1.4rem] text-body">A* Maths, A Further Maths, A* Physics, A* Geography</h4>
-        <h3 className="text-[1.6rem] font-normal text-body"><strong>GCSEs</strong>, Wymondham College (09/2015 - 07/2020)</h3>
+        <h3 className="text-[1.6rem] font-semibold text-body"><strong>GCSEs</strong>, Wymondham College (09/2015 - 07/2020)</h3>
         <h4 className="text-[1.4rem] text-body">10 grade 9s, 1 grade 8, and 1 grade 7</h4>
       </div>
     </section>

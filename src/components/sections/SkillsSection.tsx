@@ -73,7 +73,7 @@ export default function SkillsSection() {
     <section id="skills" className="relative scroll-mt-24 bg-brand-muted flex flex-col items-start min-h-[400px] pt-[12rem] px-[10vw] pb-12">
       <Wave fill="var(--color-brand-mid)" />
       <div className="w-full max-w-8xl mx-auto">
-        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] bg-[linear-gradient(252deg,var(--color-accent-strong)_0%,var(--color-deep)_100%)] bg-clip-text text-transparent">Skills</h2>
+        <h2 className="mt-[-3.5rem] mb-4 text-[3.2rem] font-extrabold bg-gradient-to-tr from-[var(--color-accent-strong)] to-[var(--color-deep)] bg-clip-text text-transparent">Skills</h2>
 
         <div className="flex flex-wrap items-start justify-center gap-4 py-4">
           {skills.map((s, idx) => {

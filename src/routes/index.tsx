@@ -18,10 +18,10 @@ function App() {
       <Header />
       <HeaderHero />
       <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <EducationSection />
       <WorkExperienceSection />
+      <SkillsSection />
+      <ProjectsSection /> 
+      <EducationSection />
       <SiteFooter />
     </div>
   )
